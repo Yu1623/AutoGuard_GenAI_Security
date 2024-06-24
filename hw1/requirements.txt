@@ -4,3 +4,4 @@ langchain-community
 wikipedia
 asyncio
 chromadb
+langsmith
