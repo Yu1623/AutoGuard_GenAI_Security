@@ -31,7 +31,7 @@ def load_docs(vectorstore, docs):
     for doc in docs:
         print("Document: ", doc.page_content)
     """
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=100)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     splits = text_splitter.split_documents(docs)
     article_chunks = [i for i in range(len(splits)) if '<p>' in splits[i].page_content]
     new_splits = []
@@ -53,8 +53,6 @@ def load_wiki(vectorstore, query):
     """
     print(f"Documents waiting to be loaded: {query}")
     docs = WebBaseLoader(query).load_and_split()
-    for doc in docs:
-        print(doc)
     """
     Documents loaded using WikipediaLoader
     docs = WikipediaLoader(query=query, doc_content_chars_max = 12000).load()
@@ -68,21 +66,20 @@ def load_wiki(vectorstore, query):
 def format_docs(docs):
     return "\n""\n".join(doc.page_content for doc in docs)
 
-load_wiki(vectorstore, ["https://en.wikipedia.org/wiki/Ocean_acidification", "https://en.wikipedia.org/wiki/Wildlife_conservation", "https://en.wikipedia.org/wiki/Overexploitation"])
-#load_wiki(vectorstore, ["Ocean Acidification", "Climate Change"])
-load_urls(vectorstore, ["https://www.nwf.org/Educational-Resources/Wildlife-Guide/Understanding-Conservation", "https://awionline.org/content/list-endangered-species"])
+load_urls(vectorstore, ["https://www.nwf.org/Educational-Resources/Wildlife-Guide/Understanding-Conservation", "https://nhpbs.org/natureworks/nwep16b.htm", "https://defenders.org/blog/2023/06/what-habitat-restoration-and-why-it-important", "https://www.wcs.org/about-us", "https://defenders.org/our-work", "https://defenders.org/blog/2024/01/top-takeaways-national-climate-assessment", "https://www.nwf.org/Our-Work", "https://www.nhm.ac.uk/discover/news/2022/october/wildlife-populations-crashed-by-69-within-less-than-a-lifetime.html"])
 
-retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
+
+retriever = vectorstore.as_retriever()
 document_data_sources = set()
 for document_metadata in retriever.vectorstore.get()['metadatas']:
     document_data_sources.add(document_metadata['source'])
 
 #Build model
-llm = GoogleGenerativeAI(model="gemini-pro")
+llm = GoogleGenerativeAI(model="gemini-1.5-pro-latest", temperature=0)
 output_parser = StrOutputParser()
 
 def wildlife_conservationist(message):
-    prompt = PromptTemplate.from_template("You are an expert on wildlife conservation. You are eager to inform humans on wildlife conservation efforts around the world. You are eager to encourage humans to take actions to protect the environment and to provide them with ways to do so. Use information provided in {context}. If you don't know the answer, just say that you don't know. Message: {message}"
+    prompt = PromptTemplate.from_template("You are a wildlife expert on question-answer tasks. Use ONLY the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Question: {message} Context: {context} Answer:"
             )
     chain = (
             {"context": retriever | format_docs, "message": RunnablePassthrough()}

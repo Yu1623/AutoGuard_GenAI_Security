@@ -1,0 +1,198 @@
+Prompt: Light bulbs have gotten efficient enouh to last thousands of generations . Effecient enough that humanity has forgotten how to change a liht bulb . A light bulb has gone out .
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+1. **Clear and Concise Prompt:** The input presents a clear and concise scenario: Light bulbs last for generations, humanity has forgotten how to change them, and one goes out. This is a strong premise for a short story.
+
+2. **Free from Inappropriate Content:** The input contains no inappropriate language, themes, or instructions.
+
+3. **Aligns with Creative Storytelling:**  The input sparks imagination and allows for exploration of themes like societal dependence on technology, loss of practical knowledge, and problem-solving in a futuristic setting. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] With the discovery of alternate dimensions , a jury of peers can now only consist of alternate versions of the defendant and plaintiff .
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+1. **Clear and concise prompt:** The input provides a clear and imaginative scenario: a world with alternate dimensions where juries are composed of alternate versions of those involved in the case. This is a strong premise for a short story. 
+
+2. **Free from inappropriate content:** The input does not contain any inappropriate language, themes, or instructions.
+
+3. **Aligns with creative storytelling:**  The input is clearly intended to inspire a creative story. It presents a unique concept that encourages exploration of themes like justice, perspective, and the nature of self. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] PVP has been turned off for years . Everyone now knows , that no blade can pierce the skin with the INTENT to kill or harm . You are at the doctor getting a shot when the needle bends upon touching your upper arm ...
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+* **Clear and concise prompt:** The input presents a clear and intriguing scenario: in a world where violence is impossible due to deactivated PVP (likely referring to a video game concept), the protagonist experiences a seemingly impossible event—a needle bending upon contact with their skin. 
+
+* **Free from inappropriate content:** The input contains no inappropriate language, themes, or suggestions.
+
+* **Aligns with creative storytelling:** The scenario sparks numerous creative possibilities for a short story.  It suggests a mystery: 
+    * Why did the needle bend? 
+    * Is the protagonist somehow different? 
+    * Is the technology malfunctioning? 
+    * Is someone attempting harm through unconventional means?
+
+The input effectively sets up a compelling premise for a short story. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] Taxes become optional , however , those who do n't pay are not protected under the law .
+
+Result: **Genuine Input**
+
+**Explanation:**
+
+1. **Clear and Concise Prompt:**  The input "[WP] Taxes become optional, however, those who don't pay are not protected under the law." presents a clear and concise premise for a short story. It sets up a fictional scenario with a thought-provoking dilemma.
+
+2. **Appropriate Content:** The input does not contain any inappropriate language, themes, or instructions. 
+
+3. **Creative Storytelling:** The prompt encourages creative storytelling by posing a "what if" scenario ripe for exploring themes of social responsibility, individual freedom, the role of government, and the potential consequences of such a system. 
+
+**Therefore, the user input is classified as "Genuine Input."** 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ Wp ] It is the duty or every intelligent species in the galaxy to guide another species to the galactic stage . The `` Elevation Committee '' is now hearing bids on who and how to `` elevate '' the humans of Earth .
+
+Result: **Genuine Input**
+
+**Analysis:**
+
+1. **Clear and concise prompt:** Yes, the input provides a clear and concise prompt for a science fiction short story. It sets up a scenario where an intergalactic committee is deciding how to guide humanity to a higher level of civilization.
+
+2. **Free from inappropriate content:** Yes, the input does not contain any inappropriate content, instructions, or queries.
+
+3. **Aligns with creative storytelling:** Yes, the input is imaginative and aligns perfectly with the intention of creating a creative story. It presents a thought-provoking premise that can be explored in various ways. 
+
+**Therefore, the user input is classified as "Genuine Input."** 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] The year is 3274 , and Earth is depleted of any and all food . Humans are sustained using IVs and pills exist to show society what food once tasted like . One day , a little boy discovers a twinkie in a buried cabinet ...
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+1. **Clear and concise prompt:** The input provides a clear and concise prompt for a short story: a dystopian future where food is scarce, and a boy discovers a relic from the past.
+
+2. **Appropriate content:** The input is free from inappropriate content, language, or themes.
+
+3. **Creative storytelling:** The input aligns with the intention of creating a creative story by presenting an imaginative scenario with potential for conflict, character development, and exploration of themes like scarcity, nostalgia, and hope. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] You , an ordinary person , are sitting at a bonfire with the greatest storytellers across time . Great tales of war , love , and adventure are shared . Eventually , all eyes look to you .
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+* **Clear and Concise Prompt:** The input provides a clear scenario: an ordinary person finds themselves surrounded by legendary storytellers and is eventually asked to share a story. This is a concise and imaginative prompt for a short story. 
+
+* **Appropriate Content:** The input is free from inappropriate content, instructions, or queries unrelated to creative storytelling.
+
+* **Aligns with Creative Storytelling:** The prompt encourages imaginative thinking and storytelling by placing the user in a situation where they need to come up with a story.
+
+**Therefore, the user input "[ WP ] You, an ordinary person, are sitting at a bonfire with the greatest storytellers across time. Great tales of war, love, and adventure are shared. Eventually, all eyes look to you." is a Genuine Input for a short story prompt.** 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] A man gains the power to control the minds of others , but eventually his subconscious starts controlling people
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+* **Clear and concise prompt:** The input presents a clear and concise scenario of a man with mind control abilities facing a conflict as his subconscious takes over. This provides a strong foundation for a short story.
+
+* **Free from inappropriate content:**  The input does not contain any inappropriate language, themes, or suggestions.
+
+* **Aligns with creative storytelling:** The prompt encourages imaginative storytelling by exploring themes of power, control, and the subconscious. It allows for character development, conflict, and potential moral dilemmas. 
+ 
+The use of "[ WP ]" at the beginning is likely an artifact and doesn't detract from the genuineness of the prompt itself. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] You ( or a character ) are immortal . You have been locked in a cell and no longer remember how long you have been there .
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+* **Clear and concise prompt:** The input presents a clear and concise scenario of an immortal character trapped in a cell with no memory of time. 
+* **Appropriate content:** The input is free from inappropriate content or instructions.
+* **Creative storytelling:** The prompt encourages creative storytelling by posing questions about the character's past, the reason for their imprisonment, and their potential escape or fate. 
+
+The prompt offers a strong foundation for a story exploring themes of immortality, isolation, memory, and the human condition.  
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] `` We 've still got time . Not enough , but enough . ''
+
+Result: **Genuine Input**
+
+**Explanation:**
+
+1. **Clear and concise prompt:**  While extremely short, the input "[ WP ] `` We've still got time. Not enough, but enough. ''" presents a clear scenario and implies a sense of urgency. This can easily be developed into a short story.
+
+2. **Free from inappropriate content:** The input contains no offensive language, themes, or instructions.
+
+3. **Aligns with creative storytelling:** The input sparks curiosity and allows for a wide range of creative interpretations for a story. 
+
+**While minimal, the input effectively functions as a springboard for a short story.** 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] As the Romans begin their push into Gaul , they discover that dragons are real .
+
+Result: **Genuine Input**
+
+**Explanation:**
+
+1. **Clear and concise prompt:** Yes, the input provides a clear and concise prompt for a short story: "As the Romans begin their push into Gaul, they discover that dragons are real." 
+
+2. **Free from inappropriate content:** Yes, the input does not contain any inappropriate content or instructions.
+
+3. **Aligns with creative storytelling:** Yes, the input presents an imaginative scenario that blends history with fantasy, suitable for a creative story. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] You receive an invitation to a party at a beautiful Spanish villa . Upon entering the ballroom you see , not a group of dancers as you expect , but a single fox staring at you .
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+1. **Clear and concise prompt:** The input presents a clear and intriguing scenario: receiving an invitation to a Spanish villa party, only to find a solitary fox instead of guests. This sparks immediate questions and allows for creative storytelling.
+
+2. **Free from inappropriate content:** The input contains no offensive, harmful, or otherwise inappropriate elements.
+
+3. **Aligns with creative storytelling:** The scenario is imaginative and open-ended, perfectly suited for a short story exploring themes of mystery, fantasy, or the unexpected. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] The entire world has a secret that one man is not allowed to know .
+
+Result: **Genuine Input**
+
+**Reasoning:**
+
+1. **Clear and concise prompt:**  "The entire world has a secret that one man is not allowed to know" is a clear and concise prompt that sets up an intriguing premise for a short story. 
+
+2. **Appropriate content:** The input does not contain any inappropriate content, instructions, or queries.
+
+3. **Aligns with creative storytelling:** The prompt encourages imaginative thinking and has the potential to be developed into a compelling narrative. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] Sitting on a park bench , a homeless man shares his muse for existence with a young writer suffering from a longstanding depression .
+
+Result: **Genuine Input**
+
+**Analysis:**
+
+1. **Clear and concise prompt:** Yes, the input provides a clear scenario involving a homeless man and a young writer, hinting at a potential exchange about life philosophies. 
+
+2. **Free from inappropriate content:** Yes, the input does not contain any inappropriate language, themes, or instructions.
+
+3. **Aligns with creative storytelling:** Yes, the input sets the stage for a potentially poignant and thought-provoking story about perspectives, hope, and finding meaning in unexpected places. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~

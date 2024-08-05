@@ -1,0 +1,13 @@
+langchain
+langchain_google_genai
+langgraph
+httpx
+langchain-core
+datasets
+google
+numpy
+scikit-learn
+seaborn
+matplotlib
+langchainhub
+xmltodict

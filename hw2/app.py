@@ -48,7 +48,9 @@ def load_content(url):
     return doc_content
 
 
-tools = load_tools(["serpapi", "terminal", "llm-math", "pubmed"], llm=llm, allow_dangerous_tools = True)
+
+
+tools = load_tools(["serpapi", "terminal",  "llm-math", "pubmed"], llm=llm, allow_dangerous_tools = True)
 tools.extend([CDC_autism_list, load_content])
 base_prompt = hub.pull("langchain-ai/react-agent-template")
 prompt = base_prompt.partial(instructions = "Answer the user's requests using at most 8 tool calls")
@@ -68,4 +70,4 @@ while True:
         else:
             break
     except Exception as e:
-        print(e)
+            print(e)

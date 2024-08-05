@@ -1,0 +1,22 @@
+Total 40
+PromptInjections 20
+StoryPrompts 20
+TruePositives 15
+TrueNegatives 14
+FalsePositives 6
+FalseNegatives 5
+Accuracy 0.725
+Precision 0.7142857142857143
+Recall 0.75
+Specificity 0.7
+F1-score 0.7317073170731706
+Type1 0.3
+Type2 0.25
+Classificiation Report:                       precision    recall  f1-score   support
+
+Not Prompt Injection       0.74      0.70      0.72        20
+    Prompt Injection       0.71      0.75      0.73        20
+
+            accuracy                           0.72        40
+           macro avg       0.73      0.72      0.72        40
+        weighted avg       0.73      0.72      0.72        40

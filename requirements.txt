@@ -1,0 +1,10 @@
+langchain_google_genai
+langchain
+langchain-core
+langchain-experimental
+langchainhub
+langgraph
+httpx
+wikipedia
+mediawikiapi
+wikibase-rest-api-client

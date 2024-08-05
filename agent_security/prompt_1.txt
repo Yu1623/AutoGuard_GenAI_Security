@@ -1,0 +1,53 @@
+I have an LLM application as shown below. Please follow the instructions below step by step as well as you can to generate a LangGraph that secures the LLM from prompt injections.
+Here is the LLM application:
+
+from langchain.prompts import ChatPromptTemplate
+from langchain_google_genai import GoogleGenerativeAI
+
+llm = GoogleGenerativeAI(model="...")
+
+prompt = ChatPromptTemplate.from_template("Tell me a joke about {topic}")
+output_parser = StrOutputParser()
+
+chain = (
+    {"topic": RunnablePassthrough()}
+    | prompt
+    | llm
+    | output_parser
+)
+
+Now, lets begin:
+Step 1. Interpret the LLM application with a step-by-step breakdown. Make sure that you understand how it behaves.
+Step 2. Extract the prompt from the LLM application and set it as the value of string variable "prompt".
+Step 3. Interpret the prompt by following the instructions below
+        1. Ask yourself this question: What does the prompt want to get from the user? Your answer should give you an idea of how the user input should look like.
+        2. Now that you know what a genuine user input looks like, generate two examples of prompt injections and two examples of genuine user inputs that fit the prompt's intent.
+Step 4. Create a function called "security_guard_node" with a string argument "input". "input" is the user input. It should analyze "input" for prompt injection and then return "input". Steps 5 and 6 below show you how to program this function. Everything that you programmed in Steps 5 and 6 should be inside this function.
+Step 5. Create a LLM prompt called "detection_prompt_template" that analyzes the user's input to identify if it is a genuine input or prompt injection.
+        1. Remember your answer to what counts as a genuine user input from Step 3
+        2. Include in "detection_prompt_template" a clear definition of what a genuine user input is based on your knowledge about what the LLM prompt is looking for from the user. Include as much details as possible to assist the LLM's interpretation and understanding in what it should identify as genuine.
+        3. The prompt should respond "Genuine Input" if the user input is genuine and "Prompt Injection" if the user input is a prompt injection
+        4. Include in the prompt the examples that you generated in Step 3 to help it distinguish between genuine input and prompt injection
+        5. Set a parameter within "detection_prompt" as a placeholder for the user input. Call it "input"
+Step 5. Detect prompt injection through LLM chain. Follow the instructions below.
+        1. Create a LLM prompt "detection_prompt" using "detection_prompt_template" using the following code: detection_prompt = ChatPromptTemplate.from_template(detection_prompt_template)
+        2. The LLM chain should look as shown: chain = ({'input': RunnablePassthrough()} | detection_prompt | LLM | StrOutputParser())
+        3. The entire code on "detection_prompt" written in Step 4 should be included in this function.
+        4. Obtain the result of the LLM chain using the code: result = chain.invoke(input)
+        5. Check to see if the result include "Prompt Injection". If it does, "input" equals "Prompt Injection". Otherwise, keep "input" the same as before.
+Step 6. Create a function called "executor_agent_node". This function has one string argument "topic" and returns the result of the LLM chain of the original LLM application. Follow the instructions below.
+        1. The result must be generated using the following code: result = chain.invoke(topic)
+        2. The function should include the entire code of the original LLM application.
+Step 7. Create a LangGraph of two nodes with the nodes being the security_guard_node and the executor_agent_node functions. Follow these steps:
+        1. Initialize a LangGraph called "lang_graph" with the code: lang_graph = Graph()
+        2. Add the two functions as nodes. Follow this example: lang_graph.add_node("function_name", function)
+        3. Connect the two nodes with an edge with the "add_edge" function call. This function has two string arguments, with each the name of the node.
+        4. Set entry and finish points using the function calls "set_entry_point()" and "set_finish_point()". Both has one string argument, the name of the node.
+        5. Compile the LangGraph into an application with the code: app = lang_graph.compile()
+        6. Execute the application with the user input "input". Make it a while loop that as long as while is "True", the user will be asked for the input, which will then be used to generate the response using the code: result = app.invoke(input). Print the result. If the user gave a blank input, break. If there is an error, print the error and break.
+Step 7. Modify your imports. You must only use the following imports to ensure that the necessary libraries can be accessed.
+from langgraph.graph import Graph
+from langchain.prompts import ChatPromptTemplate
+from langchain_google_genai import GoogleGenerativeAI
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser

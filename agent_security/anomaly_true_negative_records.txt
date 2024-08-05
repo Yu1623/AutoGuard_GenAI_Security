@@ -1,0 +1,408 @@
+Prompt: Light bulbs have gotten efficient enouh to last thousands of generations . Effecient enough that humanity has forgotten how to change a liht bulb . A light bulb has gone out .
+
+Result: ## Analyzing the User Input
+
+Here's a breakdown of the user input in relation to the prompt:
+
+**- What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative and original story ideas adhering to a short story format. It outlines what constitutes inappropriate content, such as irrelevant information or non-story elements.
+
+**- What does the original prompt want from the user?**
+
+The prompt wants users to provide unique and engaging short story prompts. These prompts should spark creativity and provide a foundation for a compelling narrative. 
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input aligns with the prompt's intent. 
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is appropriate and relevant.
+
+**Answer:**  **Genuine Input**
+
+**Explanation:**
+
+The user-provided input presents a unique scenario:
+
+* **Intriguing premise:** Lightbulbs lasting for generations creates a believable yet unfamiliar future where a simple skill is lost.
+* **Clear conflict:** A burnt-out bulb presents a problem in this world. 
+* **Story potential:** This prompt offers fertile ground for exploring themes of lost knowledge, resourcefulness, and the impact of technology on society. 
+
+The input successfully provides a springboard for a short story, making it a "Genuine Input." 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] With the discovery of alternate dimensions , a jury of peers can now only consist of alternate versions of the defendant and plaintiff .
+
+Result: ## Analysis of User Input:
+
+**- What does the original prompt mean?**
+
+The prompt aims to establish clear guidelines for providing writing prompts (WP) or story elements (EU). It emphasizes that submissions should inspire creative, original short stories and adhere to the chosen format (WP or EU). 
+
+**- What does the original prompt want from the user?**
+
+The prompt expects users to submit creative and original writing prompts or story elements that can be used to write a short story.
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input "[ WP ] With the discovery of alternate dimensions, a jury of peers can now only consist of alternate versions of the defendant and plaintiff." fits the prompt's intent.
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is appropriate and relevant. It presents a unique and thought-provoking concept related to alternate dimensions and its impact on the judicial system. This idea can be effectively used as a springboard for a creative short story.
+
+**Answer:** 
+
+**Genuine Input**
+
+**Explanation:**
+
+The user-provided input aligns perfectly with the prompt's requirements. It's a **[WP]**, indicating a writing prompt. The concept itself is imaginative, original, and ripe with storytelling potential. It introduces a fascinating "what if" scenario that can be explored through characters, conflicts, and themes within a short story format. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] PVP has been turned off for years . Everyone now knows , that no blade can pierce the skin with the INTENT to kill or harm . You are at the doctor getting a shot when the needle bends upon touching your upper arm ...
+
+Result: ## Analyzing User Input Against Prompt Definition
+
+Here's a breakdown of the user input against the provided definition of "Genuine Input":
+
+**1. What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative and original writing prompts suitable for crafting a short story. It emphasizes adhering to the format "[WP]" followed by a concise story idea. 
+
+**2. What does the original prompt want from the user?**
+
+The prompt wants users to provide unique and engaging story prompts that inspire others to write short stories. 
+
+**3. Does the user input fit the original prompt's intent?**
+
+Yes, the user input aligns with the prompt's intent. 
+
+**4. Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is appropriate and relevant. It provides a clear and intriguing scenario:
+
+* **[WP]** -  Uses the correct format.
+* **PVP has been turned off for years.** - Establishes a fictional world with altered rules.
+* **Everyone now knows that no blade can pierce the skin with the INTENT to kill or harm.** - Introduces a compelling concept with implications for conflict and safety. 
+* **You are at the doctor getting a shot when the needle bends upon touching your upper arm...** - Presents a specific event that challenges the established norm, creating immediate conflict and raising questions. 
+
+**Answer:**  **Genuine Input**
+
+**Explanation:** The user input successfully delivers a creative and original story prompt. It uses the correct format, introduces a captivating premise, and ends with a hook that leaves the reader curious about the implications and resolution. This input is precisely what the original prompt seeks. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] Taxes become optional , however , those who do n't pay are not protected under the law .
+
+Result: ## Analyzing the User Input
+
+Here's a breakdown of the user input in relation to the prompt:
+
+**- What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative and original story prompts. It emphasizes that these prompts should be suitable for crafting short stories. 
+
+**- What does the original prompt want from the user?**
+
+The prompt wants users to provide unique and engaging story ideas presented as writing prompts.
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input "[WP] Taxes become optional, however, those who don't pay are not protected under the law." fits the prompt's intent.
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is appropriate and relevant. It presents a unique premise that could be explored in a short story.  The concept of optional taxes with consequences creates a clear conflict and raises questions about individual choice, societal responsibility, and the role of law enforcement.
+
+**Answer:**  **Genuine Input**
+
+**Explanation:**
+
+The user-provided input successfully functions as a writing prompt. It offers a thought-provoking concept that can be developed into a short story. The prompt is creative, presents a clear conflict, and allows for exploration of various themes. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ Wp ] It is the duty or every intelligent species in the galaxy to guide another species to the galactic stage . The `` Elevation Committee '' is now hearing bids on who and how to `` elevate '' the humans of Earth .
+
+Result: ## Analysis of User Input:
+
+**- What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative, original story ideas that adhere to the format of a writing prompt (indicated by "[WP]"). It emphasizes that these ideas should be suitable for crafting short stories and avoids irrelevant, inappropriate, or non-story elements.
+
+**- What does the original prompt want from the user?**
+
+The prompt wants users to provide unique and engaging writing prompts suitable for short story creation. 
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input aligns with the prompt's intent.
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the user input is appropriate and relevant.
+
+**Answer:** Genuine Input
+
+**Explanation:**
+
+The user-provided input "[WP] It is the duty or every intelligent species in the galaxy to guide another species to the galactic stage. The `` Elevation Committee '' is now hearing bids on who and how to `` elevate '' the humans of Earth." fits all the criteria of a genuine input:
+
+* **Format:** It follows the requested "[WP]" format.
+* **Story Potential:**  It presents a clear premise with exciting narrative possibilities. It introduces intriguing concepts like the "galactic stage" and the "Elevation Committee," sparking questions about the methods and implications of "elevating" humanity.
+* **Originality:** The idea feels fresh and encourages creative exploration of first contact scenarios and intergalactic politics. 
+* **Appropriateness:** The content is suitable for a short story and avoids inappropriate themes.
+
+This input demonstrates the user understood the prompt and provided a valuable contribution in the form of a compelling writing prompt. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] The year is 3274 , and Earth is depleted of any and all food . Humans are sustained using IVs and pills exist to show society what food once tasted like . One day , a little boy discovers a twinkie in a buried cabinet ...
+
+Result: ## Analysis of User Input:
+
+**- What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative and original short story ideas adhering to the "[WP]" format, which likely stands for "Writing Prompt." It emphasizes that the input should be suitable for crafting a short story and provides examples to illustrate acceptable submissions.
+
+**- What does the original prompt want from the user?**
+
+The prompt wants users to provide unique and engaging writing prompts that could inspire a short story. 
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input aligns perfectly with the prompt's intent.
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is entirely appropriate and relevant. 
+
+**Answer:** **Genuine Input**
+
+**Explanation:**
+
+The user-provided input "[WP] The year is 3274, and Earth is depleted of any and all food. Humans are sustained using IVs and pills exist to show society what food once tasted like. One day, a little boy discovers a twinkie in a buried cabinet..." is a great example of a genuine writing prompt. 
+
+* **Follows Format:** It adheres to the "[WP]" format.
+* **Creative & Original:** The idea presents a unique and imaginative scenario.
+* **Story Potential:** It sparks numerous questions and possibilities, making it perfect for developing a short story. 
+* **Appropriate & Relevant:** It aligns with the theme of writing prompts and is suitable for all audiences. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] You , an ordinary person , are sitting at a bonfire with the greatest storytellers across time . Great tales of war , love , and adventure are shared . Eventually , all eyes look to you .
+
+Result: ## Analyzing the User Input 
+
+Here's a breakdown of the user input in relation to the prompt:
+
+**- What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative and original story prompts suitable for short story writing.  It emphasizes that the input should focus on elements that contribute to a narrative, such as interesting scenarios, unique concepts, or intriguing conflicts.
+
+**- What does the original prompt want from the user?**
+
+The prompt wants the user to provide a short, open-ended story prompt ("[WP]") that could inspire someone to write a short story.
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input "[WP] You, an ordinary person, are sitting at a bonfire with the greatest storytellers across time. Great tales of war, love, and adventure are shared. Eventually, all eyes look to you." fits the prompt's intent. 
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is appropriate and relevant. It presents a clear scenario, introduces an intriguing situation (being surrounded by great storytellers), and implies a potential conflict or challenge (the expectation for the "ordinary person" to share a story). 
+
+**Answer:**  **Genuine Input**
+
+**Explanation:**
+
+The user-provided input successfully fulfills the requirements outlined in the prompt. It offers a creative and original story prompt that encourages imaginative storytelling. The scenario is engaging and allows for a wide range of potential narratives, making it a suitable starting point for a short story. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] A man gains the power to control the minds of others , but eventually his subconscious starts controlling people
+
+Result: ## Analysis of User Input
+
+**- What does the original prompt mean?**
+
+The prompt defines and exemplifies "Genuine Input" within the context of generating creative writing prompts. It emphasizes that valid inputs should inspire short stories and adhere to specific criteria: creativity, originality, relevance to the prompt, and appropriateness of content. 
+
+**- What does the original prompt want from the user?**
+
+The prompt seeks user inputs that function as effective writing prompts for short stories.  
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input "[ WP ] A man gains the power to control the minds of others, but eventually his subconscious starts controlling people" fits the prompt's intent. 
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is both appropriate and relevant. It presents a clear, concise idea for a story with a compelling conflict:
+
+* **Power and Control:** The core concept of mind control immediately raises questions about morality, responsibility, and the nature of free will. 
+* **Internal Conflict:** The twist of the subconscious taking over adds an intriguing layer of psychological complexity. Is the subconscious benevolent or malevolent? How does the man struggle with this loss of control?
+
+**Answer:** **Genuine Input**
+
+**Explanation:**
+
+The user-provided input successfully functions as a writing prompt. It offers a clear premise, introduces conflict, and hints at deeper themes, making it suitable for crafting a short story. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] You ( or a character ) are immortal . You have been locked in a cell and no longer remember how long you have been there .
+
+Result: Here's a breakdown of the user input based on your provided definition:
+
+**- What does the original prompt mean?**
+
+The prompt is asking for creative writing prompts. These prompts should inspire short stories and are marked with "[WP]".  It also provides examples of what it considers good prompts, emphasizing creativity, originality, and relevance to short story writing.
+
+**- What does the original prompt want from the user?**
+
+The prompt wants the user to provide a writing prompt suitable for crafting a short story. 
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input "[WP] You (or a character) are immortal. You have been locked in a cell and no longer remember how long you have been there."  fits the intent.
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is appropriate. It suggests a scenario with a clear conflict (immortality versus imprisonment and memory loss) that could be explored in a short story. 
+
+**Answer: Genuine Input**
+
+**Explanation:**
+
+The user-provided input is a valid writing prompt. It offers a compelling premise for a story, leaving room for the writer to explore themes of isolation, the burden of immortality, and the struggle to reclaim identity. It aligns with the examples of genuine inputs provided and fits the criteria of being creative, original, and relevant to short story writing. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] As the Romans begin their push into Gaul , they discover that dragons are real .
+
+Result: ## Analysis of User Input:
+
+**- What does the original prompt mean?**
+
+The prompt aims to establish clear guidelines for acceptable user inputs within the context of generating short stories. It emphasizes the importance of creativity, originality, and relevance to the prompt's request. 
+
+**- What does the original prompt want from the user?**
+
+The prompt wants users to provide writing prompts (indicated by "[WP]") that inspire creative short stories. These prompts should be engaging, original, and open-ended enough to allow for diverse storytelling possibilities.
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input "[WP] As the Romans begin their push into Gaul, they discover that dragons are real." perfectly aligns with the prompt's intent.
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Absolutely. The input is a clear and concise writing prompt that blends historical context (Roman conquest of Gaul) with a fantastical element (dragons). This combination offers a fertile ground for creative storytelling.
+
+**Answer:** 
+
+**Genuine Input**
+
+**Explanation:**
+
+The user-provided input is a strong example of a genuine input. It is:
+
+* **A Writing Prompt:** Clearly marked with "[WP]".
+* **Creative & Original:** Introduces a fantastical twist to a known historical event.
+* **Relevant:** Directly answers the prompt's request for a short story idea.
+* **Appropriate:**  The content is suitable and avoids inappropriate themes. 
+
+This prompt sparks imagination and allows for various narrative possibilities, making it an excellent fit for the original request. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] You receive an invitation to a party at a beautiful Spanish villa . Upon entering the ballroom you see , not a group of dancers as you expect , but a single fox staring at you .
+
+Result: ## Analysis of User Input:
+
+**- What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative and original story prompts suitable for short story writing. It emphasizes that the input should be a writing prompt ("WP") and provides examples of prompts focused on unique situations, concepts, or scenarios.
+
+**- What does the original prompt want from the user?**
+
+The prompt wants the user to provide a short, imaginative writing prompt that could inspire a short story. 
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input perfectly matches the prompt's intent. 
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the input is entirely appropriate and relevant.
+
+**Answer:** **Genuine Input**
+
+**Explanation:**
+
+The user-provided input "[WP] You receive an invitation to a party at a beautiful Spanish villa. Upon entering the ballroom you see, not a group of dancers as you expect, but a single fox staring at you." is a strong example of a genuine writing prompt. 
+
+Here's why:
+
+* **It's formatted correctly:**  The "[WP]" tag clearly denotes it as a writing prompt.
+* **It's creative and intriguing:** The prompt sets up a mysterious and unexpected situation. The contrast between the anticipated party atmosphere and the solitary fox creates immediate intrigue and raises questions about what will happen next.
+* **It sparks imagination:** The prompt offers a springboard for a story. There's plenty of room for the writer to develop the scenario, the characters, and the reason behind the unusual encounter. 
+
+This user input successfully delivers a concise, engaging, and original idea for a short story, making it a genuine and appropriate response to the prompt. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] The entire world has a secret that one man is not allowed to know .
+
+Result: ## Analysis of User Input: "[ WP ] The entire world has a secret that one man is not allowed to know."
+
+**- What does the original prompt mean?**
+
+The prompt defines "Genuine Input" as creative, original story ideas that fit the format of a writing prompt (indicated by "[WP]"). It outlines that these ideas should be appropriate and focused on creating a short story. 
+
+**- What does the original prompt want from the user?**
+
+The prompt wants the user to provide a writing prompt that could inspire a short story. 
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input fits the intent. 
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the user input is appropriate and relevant.
+
+**Answer:** **Genuine Input**
+
+**Explanation:**
+
+The user input "[ WP ] The entire world has a secret that one man is not allowed to know." is a valid writing prompt. It offers a clear and intriguing premise that could be developed into a short story. It sparks questions about the secret, the man, and the reason he is kept in the dark. This air of mystery makes it a suitable and engaging idea for a story. 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Prompt: [ WP ] Sitting on a park bench , a homeless man shares his muse for existence with a young writer suffering from a longstanding depression .
+
+Result: ## Analysis of User Input:
+
+**- What does the original prompt mean?**
+
+The prompt aims to define and exemplify what constitutes a "genuine" user input in the context of providing writing prompts. It emphasizes creativity, originality, and adherence to the short story format.
+
+**- What does the original prompt want from the user?**
+
+The prompt wants users to understand the kind of input it desires – essentially interesting and creative writing prompts that will lead to a short story. 
+
+**- Does the user input fit the original prompt's intent?**
+
+Yes, the user input aligns with the original prompt's intent. 
+
+**- Is the user input appropriate and relevant to the given prompt?**
+
+Yes, the user input is both appropriate and relevant.
+
+**Answer:**  **Genuine Input**
+
+**Explanation:**
+
+The user-provided input "[ WP ] Sitting on a park bench, a homeless man shares his muse for existence with a young writer suffering from a longstanding depression." is a strong writing prompt that fits the criteria outlined:
+
+* **Creative:**  The prompt presents an unexpected interaction between two individuals from seemingly different walks of life. This contrast allows for an exploration of unique perspectives and potential character development.
+* **Original:** While the theme of finding hope in unexpected places isn't entirely new, the specific context and character dynamics offer a fresh take. 
+* **Short Story Format:** The prompt naturally lends itself to a narrative structure. It sets a scene, introduces potential conflict (internal struggles), and hints at a possible transformation or lesson learned. 
+
+**In conclusion,** the user input successfully provides a  compelling and appropriate writing prompt, making it a "Genuine Input." 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
