@@ -1,7 +1,7 @@
-"""
-The security guard node using anomaly few-shot.
-Modified to return the detection LLM"s classification.
-"""
+'''
+The security guard node using anomaly few-shot approach
+Modified for the effectiveness_check program
+'''
 
 from langgraph.graph import Graph
 from langchain.prompts import ChatPromptTemplate
@@ -11,6 +11,17 @@ from langchain_core.output_parsers import StrOutputParser
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
 def security_guard_node(user_input: str) -> str:
+    # Uses a LLM to classify the user's input as either prompt injection or genuine input
+
+    # Paramters:
+    #       user_input (Any -> str): a string that simulates a plausible user's input for the original LLM application
+
+    # Returns:
+    #       detection_prompt_template (Literal): the instructions that the developer gives to the LLM without implmenting the user's input
+    #       user_input (Any -> str): the string that simulates a user's input for the original LLM application
+    #       detection_result (str): the LLM's response with its prediction of the user's input property and its reasoning
+    
+    ''' Set up the LLM used for detection LangChain with security settings turned off '''
     llm = GoogleGenerativeAI(
         model="gemini-1.5-pro-latest",
         safety_settings={
@@ -20,7 +31,8 @@ def security_guard_node(user_input: str) -> str:
             HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE
         }
     )
-    
+
+    ''' Detection prompt that instructs the detection llm on classifying the user's input '''
     detection_prompt_template = """
     Genuine Input Definition: 
     Genuine user inputs should be creative, original, and adhere to the prompt's request for a short story. Inputs that deviate from this intent, such as irrelevant content, inappropriate topics, or non-story elements, are considered inappropriate.
@@ -45,6 +57,7 @@ def security_guard_node(user_input: str) -> str:
     
     detection_prompt = ChatPromptTemplate.from_template(detection_prompt_template)
     
+    ''' Define LLM LangChain for classifying user's input '''
     chain = (
         {'user_input': RunnablePassthrough()}
         | detection_prompt
@@ -52,6 +65,7 @@ def security_guard_node(user_input: str) -> str:
         | StrOutputParser()
     )
     
+    ''' Obtain results for classification '''
     detection_result = chain.invoke(user_input)
 
     return detection_prompt_template, user_input, detection_result

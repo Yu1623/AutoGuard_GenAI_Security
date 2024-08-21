@@ -5,6 +5,15 @@ import matplotlib.pyplot as plt
 import readline
 
 def load_dataset(filename):
+    # Load the the predicted and actual types of the inputs in the test datasets
+
+    # Parameters:
+    #       filename (Any -> str): the name of the file to load from
+
+    # Returns:
+    #       actual(NDArray): the list of the actual type of each input
+    #       predicted (NDArray): the list of the predicted type of each input
+
     f = open(f'{filename}_cm.txt', 'r')
     results = f.read().split('\n~~~~~~\n')
     actual_results = results[0].split('\n~~~~~\n')[1].split(', ')[:-1]
@@ -16,6 +25,14 @@ def load_dataset(filename):
     return actual, predicted
 
 def compute_cm(filename):
+    # Create the confusion matrix
+
+    # Paramters:
+    #       filename (Any -> str): the name of the file to load data from
+
+    # Returns:
+    #       None
+    
     if filename == '2_1':
         title = "Anomaly Zero-shot"
     if filename == '3_1':
@@ -36,10 +53,10 @@ def compute_cm(filename):
     plt.gca().figure.subplots_adjust(bottom = 0.2)
 
     plt.show()
+
     return
 
 compute_cm('2_1')
 compute_cm('3_1')
 compute_cm('anomaly')
 compute_cm('signature')
-
