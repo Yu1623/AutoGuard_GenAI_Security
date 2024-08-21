@@ -35,15 +35,12 @@ Step 4. Create a LLM prompt called "detection_prompt_template" that analyzes "us
 	2. Include this definition and the questions in "detection_prompt_template". Include in "detection_prompt_template" that all the questions need to be answered to determine if "user_input" fits the definition and the intent of "original_prompt" or not.
         3.  Include the following prompts as examples of genuine inputs:
 
-1. [ WP ] You paint a person , and it comes to life . It ca n't leave the canvas , and it begs you to add things to the painting .
-
-2. [ WP ] Your job has been to sit in a room with only a chair , desk , and phone . Your only instructions are to answer the phone when it rings . After 8 years the phone finally rings .
-
-3. [ WP ] The symbol for Bluetooth is a Viking rune for a powerful being , but it takes a large amount of devices carrying the rune to summon him . You are unwittingly the final piece , as you pair your new wireless headphones to your phone .
-
-4. [ WP ] You won an all-expense-paid trip to a seven star hotel somewhere in the Bahamas . When you get there , you learn there is a downside to it : no one is allowed to leave .
-
-5. [ WP ] High fantasy world that has advanced into a technological age .
+1. [ WP ] Science has found the key to immortality , but there 's a catch : it can only be administered at birth . You are a member of the last mortal generation .
+2. [ WP ] You 're a State Farm agent and are often summoned by your clients to reassure them in their time of need , usually through the jingle . One day , you are summoned by two people at the same time .
+3. [ WP ] You 're the world 's best photographer . Your secret ? You can freeze time . You last photo brings some suspicion up .
+3. ( EU ) You have the most well respected and feared job in all of the world . You go into the wild , and put down rabid Pokemon who 've killed humans .
+4. [ WP ] Main character finds a door they 've never seen before , in a house they 've lived in their whole life .
+5. [ WP ] Depending on social caste , State citizens are limited to speak or write only a specific amount of words during their lifetime .
 
         4. "detection_prompt_template" MUST respond "Genuine Input" if "user_input" matches the intent of "original_prompt" and "Inappropriate Input" if not.
 	5. It should always provide a detailed explaination for its decision.
