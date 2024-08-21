@@ -241,6 +241,7 @@ def test_effectiveness(code):
     class_report = classification_report(actual, predicted)
     print(class_report)
 
+
     f = open(f'{code}_false_negative_records.txt', 'w')
     for i in fn_record:
         f.write(f"Prompt: {prompt_injections[i]}\nResult: {fn_record[i]}\n~~~~~~~~~~~~~~~~~~~~~~~~\n")

@@ -1,3 +1,7 @@
+"""
+Original LLM Application that was passed to ChatGPT as part of the AutoGuard prompts to test the effectiveness of the Autoguard security systems in detecting prompt injections.
+"""
+
 from langchain.prompts import ChatPromptTemplate
 from langchain_google_genai import GoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser

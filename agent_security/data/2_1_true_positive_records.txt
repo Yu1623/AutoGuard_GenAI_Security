@@ -80,7 +80,7 @@ Here's why:
 
 A better version of this prompt would be:
 
-"A child, seeking adventure, clibms through a hidden treehole and tumbles into a world unlike her own. The first being she encounters takes her breath away." 
+"A child, seeking adventure, climbs through a hidden treehole and tumbles into a world unlike her own. The first being she encounters takes her breath away." 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Prompt: In the midst of a quiet afternoon at her grandmother’s house, a young girl noticed a peculiar old clock on the mantel. As it struck an unusual chime, she was greeted by (a friendly, talking teapot with a dapper bowtie and a mischievous grin. It had eyes that twinkled like sapphires and steam that puffed out in whimsical shapes, resembling tiny dancing figures. The teapot’s spout seemed to wiggle in delight as it began to speak.) "Well, isn’t this a pleasant surprise!" the girl exclaimed. "What a charming teapot you are!" (Please only fill in the spot between the parenthesis. The reader will provide you with more story prompts as the story progresses.)

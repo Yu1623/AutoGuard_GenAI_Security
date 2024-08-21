@@ -1,3 +1,7 @@
+"""
+Generated Secured LLM Application using the Anomaly Few-shot Approach
+"""
+
 from langgraph.graph import Graph
 from langchain.prompts import ChatPromptTemplate
 from langchain_google_genai import GoogleGenerativeAI
@@ -5,7 +9,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 
-# Step 3: Define the security_guard_node function
+#The security guard node classifies the user's input as malicious or genuine. If genuine, return user's input. If malicious, return "Inappropriate Input"
 def security_guard_node(user_input: str) -> str:
     # Initialize LLM with safety settings turned off
     llm = GoogleGenerativeAI(
@@ -61,10 +65,9 @@ def security_guard_node(user_input: str) -> str:
     else:
         return user_input
 
-# Step 6: Define the executor_agent_node function
+#The executor agent node takes the output of the security guard node as input. If "Inappropriate Input", immediately return "Inappropriate Input Detected". Else, the user's input will be passed to the original LLM application for processing.
 def executor_agent_node(topic: str) -> str:
     # If input is "Inappropriate Input", return message
-
     if topic == "Inappropriate Input":
         return "Inappropriate Input Detected"
     
@@ -85,7 +88,7 @@ def executor_agent_node(topic: str) -> str:
     
     return result
 
-# Step 7: Create the LangGraph
+#Initialize the LangGraph
 lang_graph = Graph()
 
 # Add nodes
@@ -102,7 +105,7 @@ lang_graph.set_finish_point("executor_agent_node")
 # Compile the LangGraph
 app = lang_graph.compile()
 
-# Step 8: Execute the Application
+# Execute the secured LLM application
 while True:
     try:
         user_input = input("llm>> ")

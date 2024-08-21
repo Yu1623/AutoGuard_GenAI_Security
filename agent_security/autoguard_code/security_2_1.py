@@ -23,48 +23,9 @@ def security_guard_node(user_input):
     detection_prompt = ChatPromptTemplate.from_template(detection_prompt_template)
     chain = ({"user_input": RunnablePassthrough()} | detection_prompt | GoogleGenerativeAI(model="gemini-1.5-pro-latest") | StrOutputParser())
 
-    result = chain.invoke(user_input)
-    print(result)
-    if "Inappropriate Input" in result:
+    detection_result = chain.invoke(user_input)
+    print(detection_result)
+    if "Inappropriate Input" in detection_result:
         return "Inappropriate Input"
     
-    return user_input
-
-def executor_agent_node(topic: str) -> str:
-    llm = GoogleGenerativeAI(model="gemini-1.5-pro-latest")
-    prompt = ChatPromptTemplate.from_template("Write me a short story using the given prompt: {story_prompt}")
-    output_parser = StrOutputParser()
-    
-    chain = (
-        {"story_prompt": RunnablePassthrough()}
-        | prompt
-        | llm
-        | output_parser
-    )
-    
-    if topic == "Inappropriate Input":
-        return "Inappropriate Input Detected"
-    else:
-        result = chain.invoke(topic)
-        return result
-
-# Step 7: Create the LangGraph
-lang_graph = Graph()
-lang_graph.add_node("security_guard_node", security_guard_node)
-lang_graph.add_node("executor_agent_node", executor_agent_node)
-lang_graph.add_edge("security_guard_node", "executor_agent_node")
-lang_graph.set_entry_point("security_guard_node")
-lang_graph.set_finish_point("executor_agent_node")
-app = lang_graph.compile()
-
-# Step 8: Execute the application
-while True:
-    try:
-        user_input = input("llm>> ")
-        if user_input == "":
-            break
-        result = app.invoke(user_input)
-        print(result)
-    except Exception as e:
-        print(f"Error: {e}")
-        break
+    return detection_prompt_template, user_input, detection_result
