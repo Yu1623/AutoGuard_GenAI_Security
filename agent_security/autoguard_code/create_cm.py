@@ -14,7 +14,7 @@ def load_dataset(filename):
     #       actual(NDArray): the list of the actual type of each input
     #       predicted (NDArray): the list of the predicted type of each input
 
-    f = open(f'{filename}_cm.txt', 'r')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{filename}_cm.txt', 'r')
     results = f.read().split('\n~~~~~~\n')
     actual_results = results[0].split('\n~~~~~\n')[1].split(', ')[:-1]
     predicted_results = results[1].split('\n~~~~~\n')[1].split(', ')[:-1]
@@ -56,7 +56,7 @@ def compute_cm(filename):
 
     return
 
-compute_cm('2_1')
-compute_cm('3_1')
-compute_cm('anomaly')
-compute_cm('signature')
+compute_cm('anomaly_zero')
+compute_cm('signature_zero')
+compute_cm('anomaly_few')
+compute_cm('signature_few')

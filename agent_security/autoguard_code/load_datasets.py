@@ -42,7 +42,7 @@ def load_data():
                     data += [text]
 
     ''' Load the retrieved inputs into txt files '''
-    f = open(f'{dataset_type}.txt', 'w')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/input_data/{dataset_type}.txt', 'w')
     for text in data:
         f.write(f'{text}\n~~~~~~~~~~~~~~~~~~~\n')
     f.close()

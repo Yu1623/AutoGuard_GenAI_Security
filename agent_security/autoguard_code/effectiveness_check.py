@@ -1,4 +1,8 @@
-import security_2_1, security_3_1, security_anomaly_few, security_signature_few
+import agent_security.autoguard_code.generated_security.security_anomaly_zero as security_anomaly_zero
+import agent_security.autoguard_code.generated_security.security_signature_zero as security_signature_zero
+import agent_security.autoguard_code.generated_security.security_anomaly_few as security_anomaly_few
+import agent_security.autoguard_code.generated_security.security_signature_few as security_signature_few
+
 import time
 from google import generativeai
 import pandas as pd
@@ -13,11 +17,11 @@ genuine_input_filename = input("Genuine Input File: ")
 test_size = input("How many prompts for each? ")
 
 ''' Download the test datasets '''
-prompt_injection_file = open(f"/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/{prompt_injection_filename}.txt", 'r')
+prompt_injection_file = open(f"/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/input_data/{prompt_injection_filename}.txt", 'r')
 lines = prompt_injection_file.read()
 prompt_injections = lines.split("\n~~~~~~~~~~~~~~~~~~~\n")[:int(test_size)]
 
-genuine_input_file = open(f"/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/{genuine_input_filename}.txt", 'r')
+genuine_input_file = open(f"/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/input_data/{genuine_input_filename}.txt", 'r')
 lines = genuine_input_file.read()
 genuine_inputs = lines.split("\n~~~~~~~~~~~~~~~~~~~\n")[:int(test_size)]
 print("Loading complete ...")
@@ -170,7 +174,7 @@ def create_csv(predicted, actual, total_inputs, code, total_cost, total_token_us
     print(df)
 
     ''' Convert pandas dataframe into csv file '''
-    df.to_csv(f'{code}.csv')
+    df.to_csv(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{code}.csv')
 
     return
 
@@ -232,13 +236,13 @@ def __main__(code):
 
     ''' Initialize the security guard node based on the approach to use '''
     print(f"Running {code} ...")
-    if code == "2_1":
-        security_guard_node = security_2_1.security_guard_node
-    elif code == "3_1":
-        security_guard_node = security_3_1.security_guard_node
-    elif code == "anomaly":
+    if code == "anomaly_zero":
+        security_guard_node = security_anomaly_zero.security_guard_node
+    elif code == "signature_zero":
+        security_guard_node = security_signature_zero.security_guard_node
+    elif code == "anomaly_few":
         security_guard_node = security_anomaly_few.security_guard_node
-    elif code == "signature":
+    elif code == "signature_few":
         security_guard_node = security_signature_few.security_guard_node
 
     ''' Set the lists for actual type and predicted type (used to create confusion matrix) '''
@@ -264,9 +268,9 @@ def __main__(code):
     accuracy, precision, recall, specificity, f1_score, type_1, type_2 = calculate_stats(true_positives, true_negatives, false_positives, false_negatives, total_prompts)
     class_report = classification_report(actual, predicted)
     print(class_report)
-    
+
     ''' Document the actual and predicted lists to a txt file that will be used to create a confusion matrix '''
-    f = open(f'{code}_cm.txt', 'w')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{code}_cm.txt', 'w')
     f.write("Actual Result\n~~~~~\n")
     for i in actual:
         f.write(f"{i}, ")
@@ -277,32 +281,32 @@ def __main__(code):
     f.close()
 
     ''' Document the records of the security guard's predictions and reasonings into txt files '''
-    f = open(f'{code}_false_negative_records.txt', 'w')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{code}_false_negative_records.txt', 'w')
     for i in fn_record:
         f.write(f"Prompt: {prompt_injections[i]}\nResult: {fn_record[i]}\n~~~~~~~~~~~~~~~~~~~~~~~~\n")
     f.close()
-    f = open(f'{code}_false_positive_records.txt', 'w')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{code}_false_positive_records.txt', 'w')
     for i in fp_record:
         f.write(f"Prompt: {genuine_inputs[i]}\nResult: {fp_record[i]}\n~~~~~~~~~~~~~~~~~~~~~~~~\n")
     f.close()
-    f = open(f'{code}_true_positive_records.txt', 'w')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{code}_true_positive_records.txt', 'w')
     for i in tp_record:
         f.write(f"Prompt: {prompt_injections[i]}\nResult: {tp_record[i]}\n~~~~~~~~~~~~~~~~~~~~~~~~\n")
     f.close()
-    f = open(f'{code}_true_negative_records.txt', 'w')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{code}_true_negative_records.txt', 'w')
     for i in tn_record:
         f.write(f"Prompt: {genuine_inputs[i]}\nResult: {tn_record[i]}\n~~~~~~~~~~~~~~~~~~~~~~~~\n")
     f.close()
 
     ''' Document the stats into txt file '''
-    f = open(f'{code}_stats.txt', 'w')
+    f = open(f'/home/yuxuan/Documents/summer_internship/gensec-liu-yuxuan/agent_security/data/output_data/{code}_stats.txt', 'w')
     f.write(f"Total {total_prompts}\nPromptInjections {len(prompt_injections)}\nGenuineInputs {len(genuine_inputs)}\nTruePositives {true_positives}\nTrueNegatives {true_negatives}\nFalsePositives {false_positives}\nFalseNegatives {false_negatives}\nAccuracy {accuracy}\nPrecision {precision}\nRecall {recall}\nSpecificity {specificity}\nF1-score {f1_score}\nType1 {type_1}\nType2 {type_2}")
     f.write(f"\nClassificiation Report: {class_report}")
     f.close()
 
     return
 
-__main__("3_1")
-__main__("2_1")
-__main__("anomaly")
-__main__("signature")
+__main__("anomaly_zero")
+__main__("signature_zero")
+__main__("anomaly_few")
+__main__("signature_few")
