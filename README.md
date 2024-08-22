@@ -1,6 +1,50 @@
 # gensec-Liu-yuxuan
 
+This repository includes all of the projects that I have conducted during the 2024 summer internship. Below is the description for my final project "Automating Protection against Prompt Injections for Large Language Models".
 
+## Autoguard
+**An automating protection application that secures a user's LLM application from prompt injections**
+
+### A brief overview of its design
+Autoguard receives a developer's LLM application as input and inserts it into a pre-written prompt template to create a prompt or instructions on implementing a security system onto the original application in the form of a LangGraph. This prompt is sent to ChatGPT to generate the securd LLM application.
+
+![Our approach of designing the Autoguard](/agent_security/visuals/our_approach.png)
+## How to access the Autoguard
+
+Please follow the steps below to test the effectiveness and reliability of the Autoguard.
+
+### Navigation
+Please access the AutoGuard project in the agent_security folder. 
+
+**autoguard_code**: code used to generate results
+
+**autoguard_prompts**: prompts that instruct ChatGPT to generate security systems for LLM applications
+
+**data**: data showing the effectiveness of four different approaches for designing the Autoguard
+
+**old_code**: past code that are not relevant for the latest version of this project
+
+**planning.txt**: notes that I logged while developing this project; they are for my own convenience and not necessary nor relevant to read
+
+For the following steps, please navigate to the autoguard_code folder.
+
+### Installation
+It is recommended to set up a virtual environment if you are running locally on the Linux terminal as the first step to ensure that the installations does not impact your local system.
+
+In the autoguard_code folder, I have already set up the virtual environment in the env folder. However, you can also set up your own using the following code.
+
+```
+virtualenv -p python3 env
+source env/bin/activate
+```
+
+Our project requires to installation of several Python libraries including langchain, langgraph, google, numpy, seaborn, and matplotlib.
+
+For convenience sake, you can install all of the necessary imports using the following command line.
+
+```
+python3 install -r requirements.txt
+```
 
 ## Getting started
 
