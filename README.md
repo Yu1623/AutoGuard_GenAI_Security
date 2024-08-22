@@ -1,20 +1,27 @@
 # gensec-Liu-yuxuan
 
-This repository includes all of the projects that I have conducted during the 2024 summer internship. Below is the description for my final project "Automating Protection against Prompt Injections for Large Language Models".
+This repository includes all of the projects that I have conducted during the 2024 summer internship. Below is the description for my final project "Automating Protection against Prompt Injections for Large Language Models", which you can find in the agent_security directory.
 
 ## Autoguard
 **An automating protection application that secures a user's LLM application from prompt injections**
 
 ### A brief overview of its design
-Autoguard receives a developer's LLM application as input and inserts it into a pre-written prompt template to create a prompt or instructions on implementing a security system onto the original application in the form of a LangGraph. This prompt is sent to ChatGPT to generate the securd LLM application.
+
+A developer sends their entire LLM application to Autoguard as input. The application merges with a pre-written prompt template to create a prompt that instructs a large language model to generate a secured version of the original application in the form of a LangGraph. ChatGPT 4.0 is used for this purpose of code generation.
 
 ![Our approach for designing the Autoguard](/agent_security/docs/our_approach.png)
 
-LangGraphs are frameworks that allow multi-actor collaboration by connecting and splitting tasks among multiple LLM agents. Their graphical and flow-chart style helps developers visualize their programs, improving efficiency and understanding of LLM structures.
+LangGraphs are frameworks that allow multi-actor collaboration by connecting and splitting tasks among multiple LLM agents. Their graphical and flow-chart style helps developers visualize their programs' design and structure, improving efficiency and interpretation of LLM programs.
 
-In the following LangGraph example provided by **LangChain**, data follows the arrows from one node to the next, with each node serving a distinct purpose such as text generation and determination of text completeness.
+I instructed AutoGuard to generate two-node LangGraphs for the secured LLM application.
 
-Please find the image source in LangChain's website: https://www.langchain.com/langgraph
+As shown in the below diagram, Autoguard has a Guard node and an Executor node. The Guard node employs a detection LLM to classify the user's input as either "prompt injection" or "genuine input". If "prompt injection", it returns an alert message. If "genuine input", it returns the user's input. The Executor node consists of a "barrier" that filters the user's input based on the 
+
+
+wraps the original LLM application into a LangGraph node called "executor node" and inserts a Guard node in front of it that protects it from prompt injections that the user inputted. The "executor node" 
+
+
+ and blocks the user's input from reaching 
 
 
 ## How to access the Autoguard
