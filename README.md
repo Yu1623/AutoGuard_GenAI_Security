@@ -8,7 +8,15 @@ This repository includes all of the projects that I have conducted during the 20
 ### A brief overview of its design
 Autoguard receives a developer's LLM application as input and inserts it into a pre-written prompt template to create a prompt or instructions on implementing a security system onto the original application in the form of a LangGraph. This prompt is sent to ChatGPT to generate the securd LLM application.
 
-![Our approach of designing the Autoguard](/agent_security/visuals/our_approach.png)
+![Our approach for designing the Autoguard](/agent_security/visuals/our_approach.png)
+
+LangGraphs are frameworks that allow multi-actor collaboration by connecting and splitting tasks among multiple LLM agents. Their graphical and flow-chart style helps developers visualize their programs, improving efficiency and understanding of LLM structures.
+
+In the following LangGraph example provided by **LangChain**, data follows the arrows from one node to the next, with each node serving a distinct purpose such as text generation and determination of text completeness.
+
+Please find the image source in LangChain's website: https://www.langchain.com/langgraph
+
+
 ## How to access the Autoguard
 
 Please follow the steps below to test the effectiveness and reliability of the Autoguard.
