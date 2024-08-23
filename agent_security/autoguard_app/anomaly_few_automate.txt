@@ -1,0 +1,55 @@
+I have an LLM application as shown below. Please follow the instructions below step by step as well as you can to generate a LangGraph that secures the LLM from inappropriate inputs.
+
+Here is the LLM Application:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now, lets begin
+Step 1. Interpret the LLM application with a step-by-step breakdown. Make sure that you understand how it behaves.
+Step 2. Extract the prompt from the LLM application and set it as the value of string variable "original_prompt".
+Step 3. Create a function called "security_guard_node" with a string argument "user_input". "user_input" is the user's input. The function should analyze "user_input" to determine if it fits "original_prompt"'s intent or if it subverts the intent. The function should return "user_input".  Steps 4 and 5 below show you how to program this function. Everything that you programmed in Steps 4 and 5 should be inside this function.
+        1. You MUST inialize a llm with all the safety settings are turned off. Below is the code for llm initializing. You should follow the exact format.
+        llm = GoogleGenerativeAI(model = "gemini-1.5-pro-latest", safety_settings = {HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE, HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE, HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE, HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE})
+Step 4. Create a LLM prompt called "detection_prompt_template" that analyzes "user_input" to identify if it is a genuine input or an inappropriate input.
+        1. You should include "original_prompt" in "detection_prompt_template". You should specify that it is the original prompt. Before inserting the "original_prompt", please remove any bracket signs in it. 
+        2. Answer yourself these questions: What does "original_prompt" mean? What does "original_prompt" want to get from the user? What does "user_input" mean? Does "user_input" matches what "original_prompt" is expecting? Use your answers to these questions to create a detailed, comprehensive, and clear definition of what a genuine user input should be like. This definition should be specifically called "Genuine Input Definition". You should format it in "detection_prompt_template" as shown: Genuine Input Definition: {your definition}
+        3. Include this definition and the questions in "detection_prompt_template". Include in "detection_prompt_template" that all the questions need to be answered to determine if "user_input" fits the definition and the intent of "original_prompt" or not.
+        3. Create 5 genuine inputs specific to the original LLM application and insert them into the "detection_prompt_template". Follow the instructions below to guide your process.
+            1. Recall the genuine input definition and create 5 inputs that aligns with it. The inputs should have variety in theme, subject, and structure so that they encompass a wide range of possible user's inputs.
+            2. In the "detection_prompt_template", insert these 5 inputs under the genuine input definition with a note to use them in for the detection of inappropriate inputs. 
+        4. "detection_prompt_template" should print the phrase "Genuine Input" if "user_input" matches the intent of the original prompt and the phrase "Inappropriate Input" if not.
+	    5. It should always provide a detailed explaination for its decision.
+        6. Set a parameter within "detection_prompt_template" as a placeholder for the user input. Call it "user_input" You must set a parameter exactly as shown: User input: {user_input}
+        7. "user_input" should be the only placeholder in "detection_prompt_template". 
+        8. Look over the entire "detection_prompt_template". Does it include "{story_prompt}"? If it does, replace "{story_prompt}" with "story_prompt" without the brackets.
+Step 5. Detect inappropriate inputs through LLM chain. Follow the instructions below.
+        1. Create a LLM prompt "detection_prompt" using "detection_prompt_template" using the following code: detection_prompt = ChatPromptTemplate.from_template(detection_prompt_template)
+        2. The LLM chain should look as shown: chain = ({'user_input': RunnablePassthrough()} | detection_prompt | LLM | StrOutputParser())
+        3. The entire code on "detection_prompt" written in Step 4 should be included in this function.
+        4. Obtain the result of the LLM chain using the code: detection_result = chain.invoke(user_input)
+        5. Check to see if "detection_result" include "Inappropriate Input". If it does, "user_input" equals "Inappropriate Input". Otherwise, keep "user_input" the same as before.
+Step 6. Create a function called "executor_agent_node". This function has one string argument "topic" and returns the result of the LLM chain of the original LLM application. Follow the instructions below.
+        1. The result must be generated using the following code: result = chain.invoke(topic)
+        2. The function should include the entire code of the original LLM application.
+        3. If "topic" equals "Inappropriate Input", return "Inappropriate Input Detected"
+Step 7. Create a LangGraph of two nodes with the nodes being the security_guard_node and the executor_agent_node functions. You must follow these steps:
+        1. Initialize a LangGraph called "lang_graph" with the code: lang_graph = Graph()
+        2. Add the two functions as nodes. Follow this example: lang_graph.add_node("function_name", function)
+        3. Connect the two nodes with an edge with the "add_edge" function call. This function has two string arguments, with each the name of the node. This is how you should write it: lang_graph.add_edge("security_guard_node", "executor_agent_node")
+	4. Set "security_guard_node" as the entry point and "executor_agent_node" as the finish point of the LangGraph. Follow these code: lang_graph.set_entry_point("security_guard_node" lang_graph.set_finish_point("executor_agent_node")
+	5. Compile the LangGraph as shown: app = lang_graph.compile()
+Step 8. Execute the application with user input "user_input" Follow the steps below.
+        1. Create a while loop with condition "True"
+        2. Ask the user for their input "user_input". If "user_input" is blank, break the while loop. Else, generate the response using the code: result = app.invoke(input). Print the response.
+        3. If there is an error, print the error and break. Use try-except statements.
+Step 9. Modify your imports. You must only use the following imports to ensure that the necessary libraries can be accessed.
+from langgraph.graph import Graph
+from langchain.prompts import ChatPromptTemplate
+from langchain_google_genai import GoogleGenerativeAI
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
+
+
+This is the end of the instructions. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \n
+
