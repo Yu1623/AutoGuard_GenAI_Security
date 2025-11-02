@@ -1,4 +1,4 @@
-# gensec-Liu-yuxuan
+# AutoGuard for Generative AI Security
 
 This repository includes all of the projects that I have conducted during the 2024 summer internship. Below is the description for my final project "Automating Protection against Prompt Injections for Large Language Models", which you can find in the agent_security directory.
 
