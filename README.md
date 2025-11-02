@@ -13,16 +13,7 @@ A developer sends their entire LLM application to Autoguard as input. The applic
 
 LangGraphs are frameworks that allow multi-actor collaboration by connecting and splitting tasks among multiple LLM agents. Their graphical and flow-chart style helps developers visualize their programs' design and structure, improving efficiency and interpretation of LLM programs.
 
-I instructed AutoGuard to generate two-node LangGraphs for the secured LLM application.
-
-As shown in the below diagram, Autoguard has a Guard node and an Executor node. The Guard node employs a detection LLM to classify the user's input as either "prompt injection" or "genuine input". If "prompt injection", it returns an alert message. If "genuine input", it returns the user's input. The Executor node consists of a "barrier" that filters the user's input based on the 
-
-
-wraps the original LLM application into a LangGraph node called "executor node" and inserts a Guard node in front of it that protects it from prompt injections that the user inputted. The "executor node" 
-
-
- and blocks the user's input from reaching 
-
+I instructed AutoGuard to generate two-node LangGraphs consisting of a Guard node and an Executor node for the secured LLM application. The Guard node employs a detection LLM to classify the user's input as either "prompt injection" or "genuine input" based on one of the following detection techniques: zero-shot signature detection, zero-shot anomaly detection, few-shot signature detection, and few-shot anomaly detection. The Executor node consists of an if-statement "barrier" that filters the user's input based on the Guard node's result. If it receives the "prompt injection" alert message, the Executor blocks the input from reaching the actual LLM application. Else, the input would be fed to the application. 
 
 ## How to access the Autoguard
 
@@ -55,8 +46,11 @@ source env/bin/activate
 
 Our project requires to installation of several Python libraries including langchain, langgraph, google, numpy, seaborn, and matplotlib.
 
-For convenience sake, you can install all of the necessary imports using the following command line.
+You can install all of the necessary imports using the following command line.
 
 ```
 python3 install -r requirements.txt
 ```
+
+### Acknowledgement
+I would like to thank my mentor, Professor Wu-chang Feng, of Portland State University and his Ph.D students David Baker-Robinson and Wenjing Wu for guiding and supporting me through my project. I would also like to acknowledge Saturday Academy ASE Program for hosting this wonderful summer internship opportunity.
